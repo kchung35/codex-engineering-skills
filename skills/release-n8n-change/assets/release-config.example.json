@@ -1,0 +1,10 @@
+{
+  "environment_class": "PRODUCTION",
+  "base_url": "https://n8n.example.com",
+  "allowed_hosts": ["n8n.example.com"],
+  "api_key_env": "N8N_PROD_API_KEY",
+  "request_timeout_seconds": 20,
+  "publication_timeout_seconds": 60,
+  "poll_interval_seconds": 2,
+  "allow_production_mutation": false
+}
