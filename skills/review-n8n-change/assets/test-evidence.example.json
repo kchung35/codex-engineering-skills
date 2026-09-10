@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "tests": [
+    {
+      "id": "T1",
+      "test_plan": "../test-artifacts/test-plan.json",
+      "summary": "../test-artifacts/matrix-summary.json",
+      "supports": ["A1"]
+    },
+    {
+      "id": "T2",
+      "test_plan": "../test-artifacts/regression-plan.json",
+      "summary": "../test-artifacts/regression-summary.json",
+      "supports": ["I1"]
+    }
+  ]
+}

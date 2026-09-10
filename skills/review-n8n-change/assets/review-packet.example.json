@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "review_id": "REVIEW-example",
+  "title": "Review canonical sector workflow change",
+  "mode": "MODIFY",
+  "change_class": "FLOW",
+  "source_workflow": "artifacts/source-workflow.json",
+  "candidate_workflow": "artifacts/candidate-workflow.json",
+  "requirements": "artifacts/requirements.json",
+  "build_artifacts": {
+    "design_decision": "artifacts/design-decision.json",
+    "contracts": "artifacts/contracts.json",
+    "failure_policy": "artifacts/failure-policy.json",
+    "side_effects": "artifacts/side-effects.json",
+    "implementation_plan": "artifacts/implementation-plan.json",
+    "change_impact": "artifacts/change-impact.json"
+  },
+  "debug_artifacts": {
+    "causal_set": null
+  },
+  "test_evidence_manifest": "test-evidence.json",
+  "author_rationale": null,
+  "created_at": "2026-01-01T00:00:00Z",
+  "stage": "INTAKE"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "candidate_behavior_sha256": "REPLACE_WITH_FINGERPRINT",
+  "acceptance": [
+    {
+      "id": "A1",
+      "status": "VERIFIED",
+      "evidence_ids": ["T1"],
+      "note": "Bound runtime test covers the required output."
+    }
+  ],
+  "invariants": [
+    {
+      "id": "I1",
+      "statement": "Existing valid records remain unchanged",
+      "status": "VERIFIED",
+      "evidence_ids": ["T2"],
+      "note": "Known-good regression fixture passes."
+    }
+  ],
+  "lenses": [
+    {
+      "id": "requirements",
+      "status": "REVIEWED",
+      "evidence_ids": ["T1"],
+      "finding_ids": []
+    },
+    {
+      "id": "regression",
+      "status": "REVIEWED",
+      "evidence_ids": ["T2"],
+      "finding_ids": []
+    }
+  ]
+}

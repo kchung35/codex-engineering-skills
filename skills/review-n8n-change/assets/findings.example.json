@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "candidate_behavior_sha256": "REPLACE_WITH_FINGERPRINT",
+  "findings": [
+    {
+      "id": "R-001",
+      "severity": "HIGH",
+      "category": "state-idempotency",
+      "status": "OPEN",
+      "claim": "A retry after the external write can create a duplicate logical record.",
+      "evidence": [
+        "STATIC:risk-scan:external-write",
+        "SOURCE:failure-policy"
+      ],
+      "failure_scenario": "The write succeeds remotely, the execution fails before checkpointing, and n8n retries the node or workflow.",
+      "impact": "Duplicate records or duplicate downstream actions.",
+      "affected_requirements": ["A2"],
+      "affected_invariants": ["I1"],
+      "required_action": "Add a stable idempotency key or prove the destination operation is idempotent.",
+      "verification_needed": "Replay the same logical event twice and verify one logical destination object exists.",
+      "confidence": "HIGH"
+    }
+  ]
+}

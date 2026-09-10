@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review n8n Change"
+  short_description: "Independently challenge and verify n8n workflow changes"
+  default_prompt: "Use $review-n8n-change to independently review this n8n candidate against requirements, prior behavior, risk signals, and bound runtime evidence; surface concrete findings and return a gated release-readiness verdict without modifying the workflow."
