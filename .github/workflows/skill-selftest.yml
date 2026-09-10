@@ -76,3 +76,25 @@ jobs:
               json.loads(path.read_text(encoding="utf-8"))
               print("OK", path)
           PY
+
+  release-n8n-change:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile release-controller scripts
+        run: python -m py_compile skills/release-n8n-change/scripts/*.py
+      - name: Run release-controller self-test
+        working-directory: skills/release-n8n-change/scripts
+        run: python selftest.py
+      - name: Validate release JSON assets
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path("skills/release-n8n-change/assets").glob("*.json"):
+              json.loads(path.read_text(encoding="utf-8"))
+              print("OK", path)
+          PY
