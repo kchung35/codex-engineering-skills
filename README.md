@@ -9,6 +9,7 @@ A collection of reusable Codex engineering skills and supporting resources.
 - `build-n8n-workflow` — requirements-to-candidate engineering workflow for new features and intentional n8n changes, with explicit contracts, state/idempotency, failure semantics, observability, scoped architecture decisions, static validation, and test handoff.
 - `review-n8n-change` — independent adversarial review and release-readiness gating for n8n changes, with candidate/evidence fingerprint binding, risk-driven review lenses, structured findings, requirement/invariant coverage, and deterministic verdicts.
 - `release-n8n-change` — low-freedom production release controller with exact reviewed-candidate binding, production drift detection, rollback capture, draft-only staging, explicit version publication, post-release verification, and verified rollback.
+- `improve-engineering-harness` — evidence-driven meta-skill that turns repeated agent failures into durable regression tests, deterministic checks, tooling/observability improvements, concise source-of-truth guidance, or narrowly scoped Skill changes.
 
 ## Repository layout
 
@@ -38,6 +39,12 @@ skills/
     references/
     scripts/
   release-n8n-change/
+    SKILL.md
+    agents/
+    assets/
+    references/
+    scripts/
+  improve-engineering-harness/
     SKILL.md
     agents/
     assets/

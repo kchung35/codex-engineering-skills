@@ -98,3 +98,27 @@ jobs:
               json.loads(path.read_text(encoding="utf-8"))
               print("OK", path)
           PY
+
+  improve-engineering-harness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile harness-improvement scripts
+        run: python -m py_compile skills/improve-engineering-harness/scripts/*.py
+      - name: Run harness-improvement self-test
+        working-directory: skills/improve-engineering-harness/scripts
+        run: python selftest.py
+      - name: Validate harness JSON assets
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path("skills/improve-engineering-harness/assets").glob("*.json"):
+              json.loads(path.read_text(encoding="utf-8"))
+              print("OK", path)
+          PY
+      - name: Audit Skill description overlap
+        run: python skills/improve-engineering-harness/scripts/detect_skill_overlap.py skills --threshold 0.45

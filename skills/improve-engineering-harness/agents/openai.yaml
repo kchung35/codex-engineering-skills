@@ -1,0 +1,6 @@
+interface:
+  display_name: "Improve Engineering Harness"
+  short_description: "Turn repeated agent failures into durable harness improvements"
+  default_prompt: "Use $improve-engineering-harness to diagnose this recurring agent/harness failure from evidence, choose the lowest reliable remediation layer, add regression coverage, and verify the improvement without duplicating responsibilities across Skills."
+policy:
+  allow_implicit_invocation: true

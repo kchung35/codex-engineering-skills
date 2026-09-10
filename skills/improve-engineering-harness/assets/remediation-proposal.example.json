@@ -1,0 +1,15 @@
+{
+  "proposal_id": "P001",
+  "classification": "DETERMINISTIC_REASONING_GAP",
+  "mechanism": "",
+  "selected_remediation": "MECHANICAL_CHECK",
+  "target_components": [],
+  "change_summary": "",
+  "why_this_layer": "",
+  "alternatives_rejected": [],
+  "blast_radius": "LOCAL",
+  "reversibility": "HIGH",
+  "new_skill_boundary": null,
+  "regression_obligation": "",
+  "security_impact": "NONE"
+}

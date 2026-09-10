@@ -1,0 +1,17 @@
+{
+  "case_id": "HARNESS-YYYYMMDD-HHMMSS-short-name",
+  "title": "Repeated agent failure statement",
+  "status": "OPEN",
+  "stage": "INTAKE",
+  "severity": "MEDIUM",
+  "scope": "REPOSITORY",
+  "failure_statement": "",
+  "impact": "",
+  "signal_ids": [],
+  "affected_capabilities": [],
+  "epistemic_notes": [],
+  "constraints": [],
+  "out_of_scope": [],
+  "deterministic_reproducer": false,
+  "single_case_exception": ""
+}

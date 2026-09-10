@@ -1,0 +1,20 @@
+{
+  "plan_id": "EV001",
+  "failure_mechanism": "",
+  "before_artifact": "",
+  "after_artifact": "",
+  "failing_cases": [],
+  "control_cases": [],
+  "metrics": [
+    {
+      "name": "historical_failure_pass_rate",
+      "direction": "MAXIMIZE",
+      "minimum_after": 1.0,
+      "maximum_regression": 0.0
+    }
+  ],
+  "protected_metrics": [],
+  "stochastic_trials": 1,
+  "acceptance_rules": [],
+  "rollback_triggers": []
+}

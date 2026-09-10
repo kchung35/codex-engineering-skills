@@ -1,0 +1,28 @@
+{
+  "skills": [
+    {
+      "name": "debug-n8n-workflow",
+      "intent": "diagnose unexplained n8n failure"
+    },
+    {
+      "name": "build-n8n-workflow",
+      "intent": "design intentional n8n change"
+    },
+    {
+      "name": "test-n8n-workflow",
+      "intent": "produce controlled runtime evidence"
+    },
+    {
+      "name": "review-n8n-change",
+      "intent": "independently approve/challenge exact candidate"
+    },
+    {
+      "name": "release-n8n-change",
+      "intent": "deploy reviewed candidate to production"
+    },
+    {
+      "name": "improve-engineering-harness",
+      "intent": "improve the agent harness from repeated failure evidence"
+    }
+  ]
+}
