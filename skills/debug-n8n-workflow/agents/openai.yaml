@@ -1,0 +1,6 @@
+interface:
+  display_name: "Debug n8n Workflow"
+  short_description: "Forensic root-cause debugging for n8n"
+  default_prompt: "Use $debug-n8n-workflow to diagnose this n8n failure from evidence, identify the complete material causal set, and verify the smallest robust fix."
+policy:
+  allow_implicit_invocation: true
