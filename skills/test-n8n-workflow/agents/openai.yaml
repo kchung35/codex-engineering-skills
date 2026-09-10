@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test n8n Workflow"
+  short_description: "Run controlled hosted n8n workflow tests safely"
+  default_prompt: "Use $test-n8n-workflow to execute this n8n test in a configured non-production lab, capture real execution evidence, apply deterministic assertions, and clean up safely."

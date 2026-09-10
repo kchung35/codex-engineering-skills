@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "default": "DENY",
+  "nodes": {
+    "Read API": {
+      "classification": "READ_ONLY",
+      "reason": "Static HTTP GET against an approved read-only endpoint"
+    },
+    "Write Lab Result": {
+      "classification": "TEST_TARGET",
+      "target": "lab-postgres",
+      "reason": "Writes only to the disposable lab database"
+    }
+  }
+}

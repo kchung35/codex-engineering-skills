@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "known-good",
+      "fixture": "fixtures/known-good.json",
+      "assertions": "assertions/known-good.json"
+    },
+    {
+      "id": "historical-failure",
+      "fixture": "fixtures/historical-failure.json",
+      "assertions": "assertions/historical-failure.json"
+    }
+  ]
+}

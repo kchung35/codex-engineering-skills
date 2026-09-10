@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "environment_class": "NON_PRODUCTION",
+  "instance_base_url": "https://your-lab.app.n8n.cloud",
+  "webhook_base_url": "https://your-lab.app.n8n.cloud",
+  "project_id": "YOUR_LAB_PROJECT_ID",
+  "workflow_name_prefix": "LAB__",
+  "credential_reference_policy": "REQUIRE_MAP",
+  "allowed_test_targets": ["mock-api", "lab-postgres"],
+  "allow_external_writes": false,
+  "production_deny_hosts": ["your-production-n8n.example.com"],
+  "external_deny_hosts": ["api-production.example.com"],
+  "max_fixture_bytes": 1048576,
+  "max_cases_per_matrix": 25,
+  "max_run_seconds": 180,
+  "poll_interval_seconds": 1.5,
+  "api_timeout_seconds": 30,
+  "webhook_timeout_seconds": 30,
+  "max_webhook_response_bytes": 65536,
+  "execution_data_mode": "follow",
+  "node_type_versions": {
+    "webhook": 2.1,
+    "code": 2
+  }
+}

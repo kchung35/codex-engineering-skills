@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "fixture_id": "synthetic-example",
+    "boundary_node": "Boundary Node",
+    "output_index": 0,
+    "provenance": {
+      "kind": "synthetic",
+      "note": "Documentation seed only"
+    },
+    "sha256": "e3fde8dfbc265cd12db5ae548a5b2aa63261f1ab92bd9f5e26cc8adb4d7e08f3"
+  },
+  "items": [
+    {
+      "json": {
+        "fund_id": "FND-001",
+        "sector": null,
+        "weight": 0.125
+      }
+    }
+  ]
+}

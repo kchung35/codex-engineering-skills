@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "test_id": "CASE-001-E01",
+  "question": "Does the downstream workflow produce the expected canonical output for the captured boundary fixture?",
+  "strategy": "BOUNDARY_REPLAY",
+  "source": {
+    "workflow_snapshot": "artifacts/source-workflow.json",
+    "workflow_id": "SOURCE_WORKFLOW_ID",
+    "workflow_version_id": "SOURCE_WORKFLOW_VERSION_ID"
+  },
+  "boundary": {
+    "node": "Boundary Node",
+    "connection_type": "main",
+    "output_index": 0
+  },
+  "cases": [
+    {
+      "id": "historical-case",
+      "fixture": "fixtures/historical-case.json",
+      "assertions": "assertions/historical-case.json"
+    }
+  ],
+  "side_effect_manifest": "side-effects.json",
+  "credential_map": "credential-map.json",
+  "comparison_baseline": null,
+  "timeout_seconds": 120,
+  "cleanup_policy": "DELETE"
+}

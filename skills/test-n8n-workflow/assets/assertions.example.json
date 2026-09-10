@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "assertions": [
+    {
+      "type": "status_equals",
+      "expected": "success"
+    },
+    {
+      "type": "node_executed",
+      "node": "Normalize"
+    },
+    {
+      "type": "node_error_absent",
+      "node": "Normalize"
+    },
+    {
+      "type": "node_item_count",
+      "node": "Normalize",
+      "run_index": 0,
+      "output_index": 0,
+      "expected": 1
+    }
+  ]
+}
