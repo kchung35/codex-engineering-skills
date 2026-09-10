@@ -18,17 +18,39 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Compile harness scripts
+      - name: Compile laboratory scripts
         run: python -m py_compile skills/test-n8n-workflow/scripts/*.py
-      - name: Run offline harness self-test
+      - name: Run laboratory self-test
         working-directory: skills/test-n8n-workflow/scripts
         run: python selftest.py
-      - name: Validate JSON seed assets
+      - name: Validate laboratory JSON assets
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
           for path in Path("skills/test-n8n-workflow/assets").glob("*.json"):
+              json.loads(path.read_text(encoding="utf-8"))
+              print("OK", path)
+          PY
+
+  build-n8n-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile build-harness scripts
+        run: python -m py_compile skills/build-n8n-workflow/scripts/*.py
+      - name: Run build-harness self-test
+        working-directory: skills/build-n8n-workflow/scripts
+        run: python selftest.py
+      - name: Validate build JSON assets
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path("skills/build-n8n-workflow/assets").glob("*.json"):
               json.loads(path.read_text(encoding="utf-8"))
               print("OK", path)
           PY

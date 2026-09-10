@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {"node": "Read Existing", "system": "Postgres", "operation": "SELECT", "classification": "READ", "idempotency": "n/a", "retry_owner": "node"},
+    {"node": "Upsert Snapshot", "system": "Postgres", "operation": "UPSERT", "classification": "UPDATE", "idempotency": "unique(entity_id,as_of_date)", "retry_owner": "node"}
+  ]
+}

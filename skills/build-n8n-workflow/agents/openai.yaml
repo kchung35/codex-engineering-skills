@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build n8n Workflow"
+  short_description: "Design and build robust n8n workflow changes"
+  default_prompt: "Design and implement this n8n workflow or intentional workflow change with explicit contracts, failure/state semantics, minimal blast radius, static validation, and a test handoff."

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "boundaries": [
+    {
+      "name": "normalized-record",
+      "cardinality": "ZERO_TO_MANY_ITEMS",
+      "fields": [
+        {"name": "entity_id", "type": "string", "required": true, "nullable": false},
+        {"name": "canonical_sector", "type": "string", "required": true, "nullable": false},
+        {"name": "raw_sector", "type": "string", "required": false, "nullable": true}
+      ],
+      "invariants": ["entity_id is stable for the logical object"],
+      "retry_safe": true
+    }
+  ]
+}

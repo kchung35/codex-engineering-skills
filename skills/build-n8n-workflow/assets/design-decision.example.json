@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "selected": "A",
+  "options": [
+    {"id": "A", "summary": "Normalize once before persistence", "pros": ["Single canonical boundary"], "cons": ["Requires mapping version"]},
+    {"id": "B", "summary": "Normalize separately at every consumer", "pros": ["Local changes"], "cons": ["Drift and duplicated logic"]}
+  ],
+  "rationale": "Central normalization minimizes semantic drift and downstream coupling.",
+  "assumptions": [],
+  "intentional_changes": [],
+  "guaranteed_unchanged": [],
+  "migration": "none",
+  "rollback": "restore prior candidate/source workflow"
+}

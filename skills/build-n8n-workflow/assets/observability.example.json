@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "correlation_fields": ["entity_id", "source_document_id", "execution_id"],
+  "stages": ["ingest", "normalize", "persist"],
+  "evidence_after_side_effect": ["entity_id", "database_row_id", "updated_at"],
+  "sensitive_fields_never_log": ["credential", "access_token"]
+}

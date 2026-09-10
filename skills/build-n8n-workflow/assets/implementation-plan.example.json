@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "operations": [
+    {
+      "id": "P1",
+      "action": "ADD",
+      "target": "Normalize Sector",
+      "reason": "Create a single canonicalization boundary",
+      "contract_change": "adds canonical_sector",
+      "side_effect_change": "none",
+      "dependencies": ["Persist Snapshot"],
+      "test_obligation": "known, unknown, null sector labels"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "failures": [
+    {"class": "transient_api", "retry": true, "max_attempts": 3, "final_action": "STOP_AND_SURFACE"},
+    {"class": "invalid_input", "retry": false, "final_action": "ROUTE_TO_REVIEW"}
+  ],
+  "state": {
+    "idempotency_key": "entity_id + as_of_date",
+    "concurrency": "database uniqueness constraint",
+    "reprocessing": "upsert same logical record"
+  }
+}

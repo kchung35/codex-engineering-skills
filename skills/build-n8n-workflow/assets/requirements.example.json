@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "title": "Add canonical sector normalization",
+  "must_do": ["Map source sector labels to canonical labels before persistence"],
+  "must_not_do": ["Change existing FundID or ReportID semantics"],
+  "invariants": ["Existing valid canonical labels remain unchanged"],
+  "acceptance": [
+    {"id": "A1", "statement": "Known source labels produce expected canonical labels", "testable": true},
+    {"id": "A2", "statement": "Unknown labels are surfaced for review rather than silently coerced", "testable": true}
+  ],
+  "out_of_scope": ["Changing manager-scoring logic"],
+  "unknowns": []
+}
