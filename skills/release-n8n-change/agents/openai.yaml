@@ -1,0 +1,2 @@
+name: Release n8n Change
+description: Deploy an approved n8n candidate using exact version binding, drift checks, rollback capture, explicit publication, and production verification.
