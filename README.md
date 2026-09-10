@@ -8,6 +8,7 @@ A collection of reusable Codex engineering skills and supporting resources.
 - `test-n8n-workflow` — deterministic non-production n8n laboratory harness for boundary-fixture replay, side-effect gating, credential-reference remapping, hosted execution capture, semantic assertions/diffs, regression matrices, and verified cleanup.
 - `build-n8n-workflow` — requirements-to-candidate engineering workflow for new features and intentional n8n changes, with explicit contracts, state/idempotency, failure semantics, observability, scoped architecture decisions, static validation, and test handoff.
 - `review-n8n-change` — independent adversarial review and release-readiness gating for n8n changes, with candidate/evidence fingerprint binding, risk-driven review lenses, structured findings, requirement/invariant coverage, and deterministic verdicts.
+- `release-n8n-change` — low-freedom production release controller with exact reviewed-candidate binding, production drift detection, rollback capture, draft-only staging, explicit version publication, post-release verification, and verified rollback.
 
 ## Repository layout
 
@@ -31,6 +32,12 @@ skills/
     references/
     scripts/
   review-n8n-change/
+    SKILL.md
+    agents/
+    assets/
+    references/
+    scripts/
+  release-n8n-change/
     SKILL.md
     agents/
     assets/
