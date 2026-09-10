@@ -1,0 +1,10 @@
+{
+  "automatic_on": [
+    "WRONG_VERSION_LIVE",
+    "MATERIAL_REGRESSION",
+    "UNSAFE_SIDE_EFFECT"
+  ],
+  "manual_on": ["PUBLICATION_UNCONFIRMED"],
+  "restore_draft": false,
+  "max_rollback_wait_seconds": 60
+}
