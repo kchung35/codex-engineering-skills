@@ -1,0 +1,12 @@
+{
+  "release_id": "REL-YYYY-MM-DD-001",
+  "stage": "PREPARED",
+  "terminal_outcome": null,
+  "candidate_fingerprint": null,
+  "baseline_fingerprint": null,
+  "baseline_active_version_id": null,
+  "staged_version_id": null,
+  "published_version_id": null,
+  "rollback_status": "NOT_REQUIRED",
+  "events": []
+}
