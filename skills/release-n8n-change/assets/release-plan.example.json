@@ -1,0 +1,10 @@
+{
+  "release_id": "REL-YYYY-MM-DD-001",
+  "workflow_id": "WORKFLOW_ID",
+  "intent": "PUBLISH_CHANGE",
+  "candidate_fingerprint": "sha256:REPLACE_ME",
+  "expected_source_fingerprint": "sha256:REPLACE_ME",
+  "expected_active_version_id": null,
+  "acceptance_criteria": ["AC-1"],
+  "change_summary": "Describe only the approved behavior change"
+}
