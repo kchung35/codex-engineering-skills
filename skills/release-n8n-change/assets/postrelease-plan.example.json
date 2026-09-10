@@ -1,0 +1,8 @@
+{
+  "strategy": "PASSIVE",
+  "observation_window_seconds": 300,
+  "minimum_matching_executions": 1,
+  "required_acceptance_criteria": ["AC-1"],
+  "allowed_side_effects": [],
+  "rollback_on_failure": true
+}
